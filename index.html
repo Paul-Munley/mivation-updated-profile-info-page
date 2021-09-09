@@ -4,10 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- ICONS -->
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css" />
+
 		<title>Mivation Profile - Updated Profile Info</title>
 	</head>
 	<body>
@@ -20,15 +34,106 @@
 				/>
 			</a>
 			<div class="header__profile">
-				<img
-					src="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80"
-					alt="Profile Image"
-					class="header__profile-img"
-				/>
+				<div class="header__profile-img profile-img"></div>
 				<p class="header__profile-name">John Smith,</p>
 				<p class="header__profile-role">Admin</p>
 				<span class="material-icons"> arrow_drop_down </span>
 			</div>
 		</header>
+		<main>
+			<div class="container">
+				<div class="profile">
+					<div class="profile__container">
+						<h1 class="profile__heading heading">Welcome back, John!</h1>
+						<div class="profile__profile-img profile-img"></div>
+						<div class="profile__email">
+							<span class="profile__email-icon material-icons"> email </span>
+							<p class="profile__email-text">jon.smith@mivation.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="update-profile">
+					<div class="update-profile__upper">
+						<h2 class="update-profile__heading heading">
+							Update Profile Information
+						</h2>
+						<p class="update-profile__text">
+							Salesforce has provided updated profile information. Please choose
+							the profile that is correct.
+						</p>
+					</div>
+					<div class="update-profile__lower">
+						<div class="update-profile__current">
+							<h2 class="update-profile__heading heading">Current</h2>
+							<h4 class="update-profile__plan">Plan: Premium</h4>
+							<div class="update-profile__details">
+								<div class="update-profile__detail-group">
+									<p class="update-profile__label">Name:</p>
+									<p class="update-profile__name">John Smith (Admin)</p>
+								</div>
+								<div class="update-profile__detail-group">
+									<p class="update-profile__label">Email:</p>
+									<p class="update-profile__name">jon.smith@mivation.com</p>
+								</div>
+							</div>
+							<div class="update-profile__current-img profile-img"></div>
+							<button class="update-profile__btn btn" type="button">
+								USE CURRENT
+							</button>
+						</div>
+						<div class="update-profile__provided">
+							<h2 class="update-profile__heading heading">Provided</h2>
+							<h4 class="update-profile__plan">Plan: Gold</h4>
+							<div class="update-profile__details">
+								<div class="update-profile__detail-group">
+									<p class="update-profile__label">Name:</p>
+									<p class="update-profile__name">John Dean Smith</p>
+								</div>
+								<div class="update-profile__detail-group">
+									<p class="update-profile__label">Email:</p>
+									<p class="update-profile__name">jsmith@intel.com</p>
+								</div>
+							</div>
+							<div class="update-profile__provided-img-cont">
+								<div class="update-profile__provided-img"></div>
+							</div>
+							<button class="update-profile__btn btn" type="button">
+								USE PROVIDED
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<a href="#" class="footer__logo">
+				<img
+					src="https://www.mivation.com/wp-content/uploads/2019/05/mivation-symbol-01.svg"
+					alt="Mivation Logo"
+					class="footer__logo-img"
+				/>
+			</a>
+			<nav class="footer__nav">
+				<a href="#" class="footer__link">About</a
+				><a href="#" class="footer__link">Buy</a
+				><a href="#" class="footer__link">Contact Us</a
+				><a href="#" class="footer__link">Gamification</a
+				><a href="#" class="footer__link">Compensation Management</a
+				><a href="#" class="footer__link">Privacy</a
+				><a href="#" class="footer__link">Terms</a>
+			</nav>
+			<div class="footer__socials">
+				<img
+					src="/facebook.svg"
+					alt="Facebook Profile"
+					class="footer__socials--facebook"
+				/>
+				<img
+					src="/linkedin.svg"
+					alt="Linkedin Profile"
+					class="footer__socials--linkedin"
+				/>
+			</div>
+		</footer>
 	</body>
 </html>
